@@ -1,7 +1,7 @@
 const { pool } = require('../../database');
 
 const cadastrarCliente = async (req, res) => {
-    const { primeiroNome, sobrenome, email, cpf, rua, numero, bairro, municipio, uf, cep, senha } = req.body;
+    const { primeiroNome} = req.body;
     
     try {
         const query = `
